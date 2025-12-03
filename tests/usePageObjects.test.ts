@@ -4,6 +4,7 @@ import {NavigationPage} from '../page-objects/pages/navigationPage';
 import {FormLayoutPage} from '../page-objects/pages/formLayoutPage';
 import {DatePickerPage} from '../page-objects/pages/datePickerPage';
 import { TestDataHelper } from '../page-objects/helpers/testDataHelper';
+import { argosScreenshot } from "@argos-ci/playwright";
 
 test.beforeEach(async ({page}) => {
     await page.goto('/');
@@ -46,5 +47,7 @@ test('Parameterized Methods', async({page}) => {
 test.only('testing with argos ci', async({page}) => {
     const pm = new PageManager(page);
     await pm.navigateTo().formLayoutPage();
+    await argosScreenshot(page, "form layouts page");
     await pm.navigateTo().datePickerPage();
+    await argosScreenshot(page, "date picker page");
 })
