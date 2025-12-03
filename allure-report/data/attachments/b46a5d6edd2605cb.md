@@ -1,0 +1,44 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - link "UITAP" [ref=e3] [cursor=pointer]:
+      - /url: /
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: /home
+      - listitem [ref=e8]:
+        - link "Resources" [ref=e9] [cursor=pointer]:
+          - /url: /resources
+  - generic [ref=e11]:
+    - heading "AJAX Data" [level=3] [ref=e12]
+    - paragraph [ref=e13]: An element may appaear on a page after processing of an AJAX request to a web server. A test should be able to wait for an element to show up.
+    - heading "Scenario" [level=4] [ref=e14]
+    - list [ref=e15]:
+      - listitem [ref=e16]: Record the following steps. Press the button below and wait for data to appear (15 seconds), click on text of the loaded label.
+      - listitem [ref=e17]: Then execute your test to make sure it waits for label text to appear.
+    - heading "Playground" [level=4] [ref=e18]
+    - button "Button Triggering AJAX Request" [active] [ref=e19] [cursor=pointer]
+    - generic [ref=e20]: 
+  - contentinfo [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e26]:
+        - link "Fork the website on GitHub" [ref=e27] [cursor=pointer]:
+          - /url: https://github.com/inflectra/ui-test-automation-playground
+        - text: .
+      - generic [ref=e28]:
+        - text: Supported by
+        - link "Rapise" [ref=e29] [cursor=pointer]:
+          - /url: https://www.inflectra.com/Rapise/
+        - text: test automation team. Copyright © 2020
+        - link "Inflectra Corporation" [ref=e30] [cursor=pointer]:
+          - /url: https://www.inflectra.com/
+        - text: .
+    - generic [ref=e31]:
+      - text: This work is licensed under the
+      - link "Apache License 2.0" [ref=e32] [cursor=pointer]:
+        - /url: https://www.apache.org/licenses/LICENSE-2.0
+      - text: .
+```

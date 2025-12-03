@@ -1,0 +1,12 @@
+version: '5.0'
+services:
+  playwright-tests:
+    image: playwright-tests
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: npm run pageObjects-chrome
+    volumes:
+      # Mount the Playwright report directory
+      - ./playwright-report/:/app/playwright-report/
+      - ./test-results/:/app/test-results/
